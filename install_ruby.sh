@@ -1,6 +1,6 @@
 #!/bin/bash
 
-all_soft=(ruby-full ruby-bundler build-essential)
+all_soft=(apt-utils ruby-full ruby-bundler build-essential)
 
 apt update -y
 for soft in $all_soft
