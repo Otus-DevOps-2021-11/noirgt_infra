@@ -29,6 +29,7 @@ systemctl enable --now mongod
 echo "MongoDB has install"
 
 # Install server
+mkdir $project_dir_name
 git clone -b monolith $project_dir_name $project_url
 cd reddit && bundle install
 
