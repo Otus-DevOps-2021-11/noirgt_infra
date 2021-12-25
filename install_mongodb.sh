@@ -1,8 +1,8 @@
 #!/bin/bash
 
-all_soft="apt-transport-https ca-certificates mongodb-org"
+all_soft="mongodb-org"
 repo_location=" /etc/apt/sources.list.d"
-repo_conf="deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse"
+repo_conf="deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse"
 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 echo $repo_conf | sudo tee $repo_location/mongodb-org-4.2.list
