@@ -5,15 +5,12 @@ project_dir_name="reddit"
 all_soft=(git)
 
 
-apt update -y
-for soft in $all_soft
-    do
-    apt install -y $soft
-    done
+sudo apt update -y
+sudo apt install -y $all_soft
 
-mkdir $project_dir_name
-git clone -b monolith $project_dir_name $project_url
-cd reddit && bundle install
+mkdir ~/$project_dir_name
+git clone -b monolith $project_url ~/$project_dir_name
+cd ~/reddit && bundle install
 
 if [ "$(ps aux | grep -Ice puma)" > 1 ]; then
     echo "Server has started"
