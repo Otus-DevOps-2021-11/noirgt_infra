@@ -8,5 +8,6 @@ wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add 
 echo $repo_conf | sudo tee $repo_location/mongodb-org-4.2.list
 sudo apt update -y
 sudo apt install -y $all_soft
+sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf
 
 sudo systemctl enable --now mongod
