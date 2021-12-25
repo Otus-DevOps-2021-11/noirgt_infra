@@ -29,7 +29,7 @@ systemctl enable --now mongod
 echo "MongoDB has install"
 
 # Install server
-cd ~/ & git clone -b monolith $project_dir_name $project_url
+git clone -b monolith $project_dir_name $project_url
 cd reddit && bundle install
 
 if [ "$(ps aux | grep -Ice puma)" > 1 ]; then
