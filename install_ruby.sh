@@ -8,6 +8,6 @@ for soft in $all_soft
     apt install -y $soft
     done
 
-if [ -n "$(ruby -v)" ] & [ -n "$(bundler -v)" ]; then
+if [ -n "$(ruby -v)" ] & [ -n "$(bundle -v)" ]; then
     echo "All soft has install"
         fi
