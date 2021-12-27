@@ -5,8 +5,8 @@ project_dir_name="reddit"
 all_soft=(git)
 
 
-sudo apt update -y
-sudo apt install -y $all_soft
+apt update -y
+apt install -y $all_soft
 
 mkdir ~/$project_dir_name
 git clone -b monolith $project_url ~/$project_dir_name
