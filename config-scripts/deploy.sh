@@ -11,8 +11,8 @@ apt install -y $all_soft
 mkdir /opt/$project_dir_name
 git clone -b monolith $project_url /opt/$project_dir_name
 cd /opt/reddit && bundle install
-puma -d
+#puma -d
 
-if [ "$(ps aux | grep -Ice puma)" > 1 ]; then
-    echo "Server has started"
-        fi
+#if [ "$(ps aux | grep -Ice puma)" > 1 ]; then
+#    echo "Server has started"
+#        fi
