@@ -6,8 +6,9 @@ repo_conf="deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mo
 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add -
 echo $repo_conf | tee $repo_location/mongodb-org-4.2.list
-apt update -y
-apt install -y $all_soft
+
+apt-get update -y
+apt-get install -y $all_soft
 sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf
 
 systemctl enable mongod && systemctl start mongod
