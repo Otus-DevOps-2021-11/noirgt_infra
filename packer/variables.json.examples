@@ -1,0 +1,5 @@
+{
+    "folder_id": "<your_folder_id>",
+    "source_image_id": "<your_source_image_id>",
+    "service_account_key_file": "<your_service_account_key_file"
+}
