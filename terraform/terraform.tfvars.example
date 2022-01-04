@@ -1,0 +1,8 @@
+cloud_id                 = "<id_of_cloud>"
+folder_id                = "<id_of_folder>"
+zone                     = "<name_of_zone>"
+image_id                 = "<id_of_image>"
+public_key_path          = "<path_of_pubkey>"
+private_key_path         = "<path_of_privkey>"
+service_account_key_file = "<path_of_service_key>"
+subnet_id                = "<id_of_subnet>"
