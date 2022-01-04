@@ -1,15 +1,17 @@
-resource "yandex_lb_target_group" "reddit_target" {
+resource "yandex_lb_target_group" "reddit_target_group" {
   name      = "reddit-target-group"
   region_id = var.region
 
-  target {
-    subnet_id = var.subnet_id
-    address   = yandex_compute_instance.app.network_interface.0.ip_address
-  }
+  dynamic "target" {
+    for_each = [
+      for one_app in yandex_compute_instance.app : {
+      subnet_id = one_app.network_interface.0.subnet_id
+      address   = one_app.network_interface.0.ip_address
+      }]
 
-  target {
-    subnet_id = var.subnet_id
-    address   = yandex_compute_instance.app2.network_interface.0.ip_address
+    content {
+      subnet_id = target.value.subnet_id
+      address   = target.value.address
+    }
   }
-
 }

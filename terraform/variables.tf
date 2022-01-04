@@ -10,7 +10,6 @@ variable "zone" {
   default = "ru-central1-a"
 }
 
-
 variable "region" {
   description = "Region"
   # Значение по умолчанию
@@ -40,4 +39,10 @@ variable "network_id" {
 
 variable "service_account_key_file" {
   description = "key .json"
+}
+
+variable "reddit_app_count" {
+  description = "Count of Reddit application"
+  # Значение по умолчанию
+  default = 1
 }
