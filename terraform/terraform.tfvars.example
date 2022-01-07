@@ -1,0 +1,11 @@
+cloud_id                 = "b1guaauiv9b0002f1n7a"
+folder_id                = "b1gibv0ivhcnnsd84u7v"
+zone                     = "ru-central1-a"
+region                   = "ru-central1"
+image_id                 = "fd8uqc9mag1154jh5mc5"
+public_key_path          = "files/ssh-keys/example.id_rsa.pub"
+private_key_path         = "files/ssh-keys/example.id_rs"
+service_account_key_file = "../packer/files/yc_service.key.json"
+subnet_id                = "e9b61r0111lelqfm495b"
+network_id               = "enppa79v810oimc6t6gn"
+reddit_app_count         = 2
