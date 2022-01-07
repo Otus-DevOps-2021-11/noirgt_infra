@@ -1,5 +1,5 @@
 resource "yandex_lb_network_load_balancer" "lb" {
-  name  = "reddit-load-balancer"
+  name = "reddit-load-balancer"
 
   listener {
     name = "reddit-listener"
