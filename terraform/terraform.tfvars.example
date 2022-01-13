@@ -8,4 +8,4 @@ private_key_path         = "files/ssh-keys/example.id_rs"
 service_account_key_file = "../packer/files/yc_service.key.json"
 subnet_id                = "e9b61r0111lelqfm495b"
 network_id               = "enppa79v810oimc6t6gn"
-reddit_app_count         = 2
+reddit_app_count         = 1
