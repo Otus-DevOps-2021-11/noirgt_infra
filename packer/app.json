@@ -8,7 +8,7 @@
             "image_name": "reddit-app-{{timestamp}}",
             "image_family": "reddit-base",
             "ssh_username": "ubuntu",
-            "subnet_id": "e9b7te8c9bja6ik980th",
+            "subnet_id": "e9beq3luvvs4mtknnn0d",
             "use_ipv4_nat": true,
             "disk_size_gb": "{{user `disk_size_gb`}}",
             "instance_cores": "{{user `instance_cores`}}",
