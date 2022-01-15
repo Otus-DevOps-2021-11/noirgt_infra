@@ -6,7 +6,7 @@ provider "yandex" {
 }
 
 module "vpc" {
-  source           = "../modules/vpc"
+  source = "../modules/vpc"
 }
 
 module "app" {
