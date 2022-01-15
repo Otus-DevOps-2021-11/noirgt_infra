@@ -18,12 +18,12 @@ resource "null_resource" "reddit_deploy" {
   }
 
   provisioner "file" {
-    source      = "files/puma.service"
+    source      = "${var.files_dir}/puma.service"
     destination = "/tmp/puma.service"
   }
 
   provisioner "remote-exec" {
-    script = "files/deploy.sh"
+    script = "${var.files_dir}/deploy.sh"
   }
 
   provisioner "remote-exec" {

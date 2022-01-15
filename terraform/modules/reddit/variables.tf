@@ -10,3 +10,7 @@ variable "external_ip_address_app" {
 variable "internal_ip_address_db" {
   description = "Internal IP-address of MongoDB"
 }
+
+variable "files_dir" {
+  description = "Directory with module's files"
+}
