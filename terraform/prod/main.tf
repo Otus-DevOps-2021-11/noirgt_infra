@@ -42,8 +42,9 @@ module "db" {
 }
 
 module "reddit" {
-  source                 = "../modules/reddit"
+  source                  = "../modules/reddit"
+  files_dir               = "../modules/reddit/files"
   external_ip_address_app = module.app.external_ip_address_app
-  internal_ip_address_db = module.db.internal_ip_address_db
-  private_key_path       = var.private_key_path
+  internal_ip_address_db  = module.db.internal_ip_address_db
+  private_key_path        = var.private_key_path
 }
