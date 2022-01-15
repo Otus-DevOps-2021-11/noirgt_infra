@@ -59,9 +59,9 @@ variable "db_disk_image" {
 }
 
 variable "s3_access_key" {
-  description = "Access key for S3 backen"
+  description = "Access key for S3 backend"
 }
 
 variable "s3_secret_key" {
-  description = "Secret key for S3 backen"
+  description = "Secret key for S3 backend"
 }
