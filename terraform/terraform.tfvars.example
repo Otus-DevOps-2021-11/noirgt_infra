@@ -11,5 +11,3 @@ service_account_key_file = "/home/noble/Документы/yc_service.key.json"
 subnet_id                = "e9beq3luvvs4mtknnn0d"
 network_id               = "enpf4k2unr9vge37c6mt"
 reddit_app_count         = 1
-s3_access_key            = "vDW86CC49K_Hp4N4t1Rj"
-s3_secret_key            = "PeQeTws-NfE6A3-YS8RVpJTtrzqM5DJsTONR_kaf"
