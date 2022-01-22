@@ -1,0 +1,9 @@
+all:
+  children:
+    app:
+      hosts:
+        62.84.126.85
+ 
+    db:
+      hosts:
+        51.250.1.43
