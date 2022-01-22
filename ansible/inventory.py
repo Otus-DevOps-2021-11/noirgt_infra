@@ -1,6 +1,7 @@
 #!/usr/bin/python3.10
 import json
 import os
+import sys
 
 yc_instance_table = os.popen("~/yandex-cloud/bin/yc compute instance list").read().strip().split("\n")[3:-1]
 yc_instance_map = {}
