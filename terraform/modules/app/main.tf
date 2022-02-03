@@ -1,8 +1,17 @@
+terraform {
+  required_providers {
+    yandex = {
+      source  = "yandex-cloud/yandex"
+      version = "0.69.0"
+    }
+  }
+}
+
 resource "yandex_compute_instance" "app" {
-  name = "reddit-app"
+  name = var.vm_name
 
   labels = {
-    tags = "reddit-app"
+    tags = var.vm_name
   }
   resources {
     cores  = 2
