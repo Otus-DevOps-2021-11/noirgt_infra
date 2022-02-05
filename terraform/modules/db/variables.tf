@@ -10,3 +10,7 @@ default = "reddit-db-base"
 variable "subnet_id" {
   description = "Subnet"
 }
+
+variable "vm_name" {
+  description = "Name of new VM"
+}
