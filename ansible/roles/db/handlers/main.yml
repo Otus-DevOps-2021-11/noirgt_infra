@@ -2,3 +2,12 @@
 # handlers file for db
 - name: restart mongod
   service: name=mongod state=restarted
+
+- name: reload mongod
+  systemd: name=mongod state=restarted
+  tags: install
+
+- name: Replace MongoDB's socket
+  shell: sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf
+  notify: reload mongod
+  tags: install
