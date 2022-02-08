@@ -18,6 +18,13 @@
 
     "provisioners": [
         {
+            "type": "shell",
+            "inline": [
+                "apt -y update && apt install -y python-minimal"
+            ],
+            "execute_command": "sudo {{.Path}}"
+        },
+        {
             "type": "ansible",
             "playbook_file": "ansible/playbooks/packer_app.yml",
             "extra_arguments": ["--tags","ruby"],
