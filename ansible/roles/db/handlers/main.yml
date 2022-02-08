@@ -8,6 +8,8 @@
   tags: install
 
 - name: Replace MongoDB's socket
-  shell: sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf
-  notify: reload mongod
+  lineinfile:
+    path: /etc/mongod.conf
+    search_string: '127.0.0.1'
+    line: 0.0.0.0
   tags: install
