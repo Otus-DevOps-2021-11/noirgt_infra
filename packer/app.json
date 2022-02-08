@@ -20,6 +20,7 @@
         {
             "type": "shell",
             "inline": [
+                "rm /var/lib/apt/lists/lock /var/cache/apt/archives/lock /var/lib/dpkg/lock*",
                 "apt -y update && apt install -y python-minimal"
             ],
             "execute_command": "sudo {{.Path}}"
