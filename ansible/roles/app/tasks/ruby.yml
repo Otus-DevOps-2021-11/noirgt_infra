@@ -1,7 +1,7 @@
 - name: Install programms
-  apt: 
+  apt:
     name: "{{ item }}"
-    state: present 
+    state: present
   with_items:
     - apt-utils
     - ruby-full

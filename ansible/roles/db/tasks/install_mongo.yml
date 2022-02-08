@@ -16,8 +16,8 @@
   apt:
     name: mongodb-org
     state: present
-    allow_unauthenticated : yes
-  notify: 
+    allow_unauthenticated: true
+  notify:
     - Replace MongoDB's socket
     - reload mongod
   tags: install

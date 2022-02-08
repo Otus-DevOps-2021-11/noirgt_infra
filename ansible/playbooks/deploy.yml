@@ -6,7 +6,7 @@
       become: true
       apt:
         name: git
-        update_cache: yes
+        update_cache: true
       tags: deploy-tag
 
     - name: Fetch the latest version of application code

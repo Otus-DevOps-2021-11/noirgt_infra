@@ -7,4 +7,3 @@
 
 - include: ruby.yml
 - include: puma.yml
-
