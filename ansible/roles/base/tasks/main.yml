@@ -1,0 +1,5 @@
+---
+# tasks file for base
+- name: Install python for Ansible
+  raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+  changed_when: False
