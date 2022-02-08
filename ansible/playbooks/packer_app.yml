@@ -1,5 +1,5 @@
 - name: Configuration soft for application
-  hosts: app
+  hosts: all
   become: true
 
   roles:
