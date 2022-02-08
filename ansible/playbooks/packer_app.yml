@@ -1,5 +1,7 @@
 - name: Install all soft for application
   hosts: all
+  gather_facts: false
+
   tasks:
     - name: Install programms
       apt: 
