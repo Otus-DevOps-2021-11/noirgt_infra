@@ -1,4 +1,7 @@
----
-roles:
-  - base
-  - app
+- name: Configuration soft for application
+  hosts: app
+  become: true
+
+  roles:
+    - base
+    - app
