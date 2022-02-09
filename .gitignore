@@ -9,6 +9,7 @@ vault.key
 *.tfbackend
 *.retry
 jdauphant.nginx
+db
 # Vagrant & molecule
 .vagrant/
 *.log
