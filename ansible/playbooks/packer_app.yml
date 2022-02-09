@@ -1,14 +1,6 @@
-- name: Install all soft for application
+- name: Configuration soft for application
   hosts: all
-  tasks:
-    - name: Install programms
-      apt: 
-        name: "{{ item }}"
-        state: present 
-      with_items:
-        - apt-utils
-        - ruby-full
-        - ruby-bundler
-        - build-essential
-      become: true
+  become: true
 
+  roles:
+    - app
